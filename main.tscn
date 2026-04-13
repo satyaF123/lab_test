@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://itmlrqkbvyq3"]
+[gd_scene load_steps=3 format=3 uid="uid://itmlrqkbvyq3"]
 
 [ext_resource type="PackedScene" uid="uid://du8yc4cfw15ji" path="res://happyface.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dtun2u63dwe1v" path="res://SadFace.tscn" id="2_0xm2m"]
 
-[node name="Node2D" type="Node2D"]
+[node name="main" type="Node2D"]
 
-[node name="Face" parent="." instance=ExtResource("1_ig7tw")]
+[node name="HappyFace" parent="." instance=ExtResource("1_ig7tw")]
+
+[node name="SadFace" parent="." instance=ExtResource("2_0xm2m")]
